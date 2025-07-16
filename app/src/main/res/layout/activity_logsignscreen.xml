@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    tools:context=".logsignscreen">
+
+    <Button
+        android:id="@+id/LoginBTN"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#EDE8E8"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Log In"
+        android:textSize="22dp"/>
+    <Button
+        android:id="@+id/Sign"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#EDE8E8"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Sign Up"
+        android:textSize="22dp"/>
+
+</LinearLayout>
