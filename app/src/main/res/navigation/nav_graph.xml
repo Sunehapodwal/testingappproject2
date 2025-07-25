@@ -3,20 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@layout/fragment_homefragment">
-<fragment
+    app:startDestination="@id/homefragment">
+
+
+    <fragment
         android:id="@+id/homefragment"
         android:name="com.example.testingappproject.Homefragment"
-        tools:layout="@layout/fragment_homefragment"/>
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" />
     <fragment
-        android:id="@+id/SearchFragment"
-        android:name="com.example.testingappproject.SearchFragment"
-        tools:layout="@layout/fragment_search"
-        android:label="search"/>
-    <fragment
-        android:id="@+id/ProfileFragment"
+        android:id="@+id/profileFragment"
         android:name="com.example.testingappproject.ProfileFragment"
-        tools:layout="@layout/fragment_profile"
-        android:label="profile"/>
-
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.testingappproject.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
 </navigation>
