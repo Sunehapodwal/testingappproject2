@@ -13,6 +13,12 @@
         android:theme="@style/Theme.TestingAppProject"
         tools:targetApi="31">
         <activity
+            android:name=".ShareprefActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerActivity"
+            android:exported="false" />
+        <activity
             android:name=".homescren"
             android:exported="false" />
         <activity
