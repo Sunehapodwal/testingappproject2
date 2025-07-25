@@ -9,7 +9,13 @@
         android:icon="@drawable/img"
         android:title="Search" />
     <item
-        android:id="@+id/quiz_home"
-        android:icon="@drawable/img_1"
-        android:title="Quiz"/>
+        android:id="@+id/profile_home"
+        android:icon="@drawable/img_3"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/trainig_home"
+        android:icon="@drawable/img_4"
+        android:title="Trainig"/>
+
 </menu>
