@@ -3,12 +3,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/photo3"
     tools:context=".ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/profile"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+       android:layout_marginTop="40dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/editclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Class"
+        android:textSize="25dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="140dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/editcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:textSize="25dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="190dp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="25dp"
+        android:backgroundTint="#614242"
+        android:layout_marginTop="250dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
 </FrameLayout>
