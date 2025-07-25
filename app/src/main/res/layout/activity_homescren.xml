@@ -6,15 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".homescren">
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:padding="24dp"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="24dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="dp">
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -24,13 +15,16 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomnavigation"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomnavigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:menu="@menu/bottomnav_graph"
+        app:backgroundTint="#EDE6E6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
