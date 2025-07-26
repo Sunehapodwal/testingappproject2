@@ -23,7 +23,6 @@ import kotlin.printStackTrace
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-
 /**
  * A simple [Fragment] subclass.
  * Use the [Homefragment.newInstance] factory method to
@@ -41,7 +40,6 @@ class Homefragment : Fragment(), OnClick {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         homescren=activity as homescren
@@ -69,7 +67,6 @@ class Homefragment : Fragment(), OnClick {
             showAddDialog()
         }
     }
-
     private fun showAddDialog() {
         val dialog = Dialog(homescren)
         dialog.setContentView(R.layout.dialogopen)
@@ -77,11 +74,9 @@ class Homefragment : Fragment(), OnClick {
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.WRAP_CONTENT
         )
-
         val nameEditText = dialog.findViewById<EditText>(R.id.name)
         val descriptionEditText = dialog.findViewById<EditText>(R.id.description)
         val saveButton = dialog.findViewById<Button>(R.id.savebtn)
-
         saveButton.setOnClickListener {
             val name = nameEditText.text.toString()
             val description = descriptionEditText.text.toString()
@@ -90,10 +85,7 @@ class Homefragment : Fragment(), OnClick {
                 Toast.makeText(homescren, "All fields are required", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
             val data = hashMapOf("name" to name, "description" to description)
-
-
             db.collection("dialogue")
                 .add(data)
                 .addOnSuccessListener {
@@ -107,7 +99,6 @@ class Homefragment : Fragment(), OnClick {
             recyclerAdapter.notifyDataSetChanged()
             dialog.dismiss()
         }
-
         dialog.show()
     }
 
@@ -195,8 +186,6 @@ class Homefragment : Fragment(), OnClick {
     override fun onItemClick(position: Int) {
         TODO("Not yet implemented")
     }
-
-
     companion object {
         /**
          * Use this factory method to create a new instance of
